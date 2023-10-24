@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html style = "background-color: aqua;">
-    <head>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Great Event</title>
+    <style>
+        /* Estilos para la barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFD76B;
+            color: black;
+            padding: 10px 20px;
+            align-items: center;
+        }
 
-    <body>
-        <h1 style ="background-color: Green;"> Clase introductoria a HTML </h1>
-        <h2> HTML parte 1 </h2>
-    </body>
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Estilos para el contenido de la página */
+        .content {
+            text-align: center;
+            margin: 100px auto;
+        }
+
+        .content img {
+            width: 300px;
+        }
+
+        .content button {
+            background-color: #FFD76B;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .content button:hover {
+            background-color: #87CEEB;
+        }
+        body {
+            background-color: #E8F6F3; /* Color de fondo celeste claro */
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <div>
+            <span>The Great Event</span>
+        </div>
+        <div>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de nosotros</a>
+            <a href="#">Soporte técnico</a>
+            <a href="#">Experiencias</a>
+        </div>
+    </div>
+
+    <!-- Contenido de la página -->
+    <div class="content">
+        <h2>Bienvenido a The Great Event</h2>
+        <a href="experiencias.html">
+            <img src="https://www.marquid.com/wp-content/uploads/2017/06/6197706_orig.jpg" alt="Imagen referencial">
+        </a>
+        <p>¡Explora y descubre experiencias únicas!</p>
+        <a href="iniciar_sesion.html">
+            <button>Iniciar sesión</button>
+        </a>
+        <a href="crear_cuenta.html">
+            <button>Crear cuenta</button>
+        </a>
+    </div>
+</body>
 </html>
