@@ -1,0 +1,41 @@
+Funcionalidad: Seguimiento en tiempo real de la planificación de eventos
+
+  Escenario: Acceso a la herramienta de seguimiento
+    Given que soy un organizador de eventos registrado
+    When accedo a la herramienta de seguimiento en la aplicación
+    Then debo ver la opción para acceder a la planificación de mi evento
+
+  Escenario: Ver detalles generales del evento
+    Given que soy un organizador de eventos registrado
+    And he accedido a la herramienta de seguimiento de mi evento
+    When selecciono mi evento
+    Then debo poder ver detalles generales del evento, como la fecha, la ubicación y la descripción
+    And la aplicación debe mostrar información actualizada en tiempo real
+
+  Escenario: Seguimiento de tareas y actividades
+    Given que soy un organizador de eventos registrado
+    And he accedido a la herramienta de seguimiento de mi evento
+    When visualizo la lista de tareas y actividades planificadas
+    Then debo ver una lista detallada de las tareas pendientes, las tareas completadas y las tareas en progreso
+    And debo poder realizar un seguimiento del estado de cada tarea y actividad
+
+  Escenario: Actualización en tiempo real de cambios
+    Given que soy un organizador de eventos registrado
+    And he accedido a la herramienta de seguimiento de mi evento
+    When realizo cambios en la planificación del evento, como agregar, editar o eliminar tareas
+    Then la aplicación debe reflejar estos cambios en tiempo real
+    And otros organizadores o miembros del equipo deben ver las actualizaciones de forma inmediata
+
+  Escenario: Comunicación con el equipo
+    Given que soy un organizador de eventos registrado
+    And he accedido a la herramienta de seguimiento de mi evento
+    When deseo comunicarme con los miembros del equipo o colaboradores
+    Then debo tener la opción de enviar mensajes, comentarios o notificaciones dentro de la herramienta
+    And la aplicación debe facilitar la colaboración y comunicación en tiempo real
+
+  Escenario: Visualización de estadísticas y métricas
+    Given que soy un organizador de eventos registrado
+    And he accedido a la herramienta de seguimiento de mi evento
+    When deseo ver estadísticas y métricas relacionadas con el evento
+    Then debo tener acceso a información como el número de tareas completadas, el progreso general y otras métricas relevantes
+    And la aplicación debe generar informes y gráficos actualizados en tiempo real
