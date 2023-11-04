@@ -1,0 +1,46 @@
+Funcionalidad: Integración con redes sociales para promocionar eventos y facilitar el registro de invitados
+
+  Escenario: Acceso a la integración con redes sociales
+    Given que soy un organizador de eventos registrado en la aplicación
+    When accedo a la función de integración con redes sociales
+    Then debo ver la opción para promocionar mi evento y facilitar el registro de invitados a través de redes sociales
+
+  Escenario: Compartir en redes sociales
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la función de integración con redes sociales
+    When deseo compartir mi evento en redes sociales como Facebook, Twitter o Instagram
+    Then debo poder seleccionar las redes sociales en las que deseo compartir el evento
+    And la aplicación debe generar publicaciones listas para compartir con información del evento y enlaces de registro
+
+  Escenario: Registro a través de redes sociales
+    Given que soy un invitado interesado en un evento promocionado en redes sociales
+    When hago clic en un enlace de registro desde una publicación en redes sociales
+    Then debo poder registrarme en el evento utilizando mi perfil de redes sociales, como Facebook o Google
+    And la aplicación debe permitirme importar automáticamente la información de mi perfil de redes sociales para el registro
+
+  Escenario: Seguimiento de promoción en redes sociales
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he compartido mi evento en redes sociales
+    When deseo realizar un seguimiento del rendimiento de mis publicaciones en redes sociales
+    Then debo tener acceso a estadísticas de clics, visualizaciones y registros generados a través de las publicaciones en redes sociales
+    And la aplicación debe proporcionar informes de análisis para evaluar la efectividad de la promoción en redes sociales
+
+  Escenario: Personalización de publicaciones
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he compartido mi evento en redes sociales
+    When deseo personalizar el contenido de las publicaciones en redes sociales
+    Then debo poder editar y personalizar las publicaciones antes de compartirlas
+    And la aplicación debe permitirme agregar imágenes, texto y enlaces personalizados
+
+  Escenario: Configuración de privacidad de registros a través de redes sociales
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he habilitado el registro a través de redes sociales
+    When deseo configurar la privacidad de los registros a través de redes sociales
+    Then debo tener la opción de definir la información que se recopilará de los perfiles de redes sociales de los invitados
+    And la aplicación debe cumplir con las regulaciones de privacidad aplicables
+
+  Escenario: Cancelación de registro a través de redes sociales
+    Given que soy un invitado registrado en un evento a través de mi perfil de redes sociales
+    When deseo cancelar mi registro al evento
+    Then debo tener la opción de cancelar mi registro a través de mi perfil de redes sociales
+    And la aplicación debe eliminar la información de registro vinculada a mi perfil de redes sociales
