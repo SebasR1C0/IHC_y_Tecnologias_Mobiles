@@ -1,0 +1,18 @@
+Funcionalidad: Acceso a un tutorial
+
+  Escenario: Acceder al tutorial
+    Given que soy un usuario registrado
+    When hago clic en el enlace "Tutorial" en el menú principal
+    Then debo ser redirigido a la página del tutorial
+    And debo ver una lista de opciones disponibles en el tutorial
+
+  Escenario: Navegar por el tutorial
+    Given que estoy en la página del tutorial
+    When hago clic en una opción del tutorial
+    Then debo ser redirigido a la sección correspondiente del tutorial
+    And debo ver información relevante sobre la opción seleccionada
+
+  Escenario: Salir del tutorial
+    Given que estoy en la página del tutorial
+    When hago clic en el botón "Salir del tutorial" o en un enlace similar
+    Then debo ser redirigido de vuelta a la página principal
