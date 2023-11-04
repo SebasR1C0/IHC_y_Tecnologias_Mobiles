@@ -1,0 +1,33 @@
+Funcionalidad: Personalizar el perfil
+
+  Escenario: Actualizar la información de perfil
+    Given que soy un usuario registrado
+    When accedo a la página de edición de perfil
+    And actualizo la información de perfil con mis preferencias
+    And hago clic en el botón "Guardar cambios"
+    Then debo recibir una confirmación de que la información de mi perfil ha sido actualizada
+    And mis preferencias de perfil deben reflejarse en mi perfil público
+
+  Escenario: Cambiar la foto de perfil
+    Given que soy un usuario registrado
+    When accedo a la página de edición de perfil
+    And selecciono una nueva foto de perfil
+    And hago clic en el botón "Guardar cambios"
+    Then debo recibir una confirmación de que mi foto de perfil ha sido actualizada
+    And mi nueva foto de perfil debe mostrarse en mi perfil público
+
+  Escenario: Configurar temas y preferencias
+    Given que soy un usuario registrado
+    When accedo a la página de edición de perfil
+    And personalizo los temas y preferencias de mi perfil
+    And hago clic en el botón "Guardar cambios"
+    Then debo recibir una confirmación de que mis temas y preferencias han sido actualizados
+    And mi perfil público debe mostrar los temas y preferencias personalizados
+
+  Escenario: Restablecer la configuración del perfil
+    Given que soy un usuario registrado
+    When accedo a la página de edición de perfil
+    And restablezco la configuración de mi perfil a los valores predeterminados
+    And hago clic en el botón "Guardar cambios"
+    Then debo recibir una confirmación de que mi perfil ha sido restablecido a los valores predeterminados
+    And mi perfil público debe mostrar los valores predeterminados
