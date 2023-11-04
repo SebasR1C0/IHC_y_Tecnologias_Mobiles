@@ -1,0 +1,25 @@
+Funcionalidad: Filtrar información de eventos
+
+  Escenario: Ingresar parámetros para filtrar eventos
+    Given que soy un usuario registrado
+    When accedo a la página de búsqueda de eventos
+    And selecciono los parámetros de filtrado deseados (fecha, ubicación, categoría, etc.)
+    And hago clic en el botón "Aplicar filtro"
+    Then debo ver una lista de eventos que coincidan con los parámetros seleccionados
+    And la lista de eventos debe estar limitada a aquellos que cumplen con los criterios de filtrado
+
+  Escenario: No se encuentran eventos que coincidan con los parámetros
+    Given que soy un usuario registrado
+    When accedo a la página de búsqueda de eventos
+    And selecciono parámetros de filtrado que no tienen coincidencias en la base de datos
+    And hago clic en el botón "Aplicar filtro"
+    Then debo recibir un mensaje indicando que no se encontraron eventos que coincidan con los parámetros
+    And no se deben mostrar eventos en la lista
+
+  Escenario: Restablecer los parámetros de filtrado
+    Given que soy un usuario registrado
+    When accedo a la página de búsqueda de eventos
+    And he aplicado previamente parámetros de filtrado
+    And hago clic en el botón "Restablecer filtro"
+    Then debo ver una lista de eventos sin ningún filtro aplicado
+    And la lista debe mostrar todos los eventos disponibles sin restricciones
