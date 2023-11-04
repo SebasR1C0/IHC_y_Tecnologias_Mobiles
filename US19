@@ -1,0 +1,40 @@
+Funcionalidad: Ofrecer múltiples métodos de pago
+
+  Escenario: Acceso a la configuración de métodos de pago
+    Given que soy un administrador de la aplicación
+    When accedo a la configuración de métodos de pago
+    Then debo ver la opción para gestionar los métodos de pago disponibles para los usuarios
+
+  Escenario: Agregar un nuevo método de pago
+    Given que soy un administrador de la aplicación
+    And he accedido a la configuración de métodos de pago
+    When agrego un nuevo método de pago a la lista de opciones
+    Then debo poder proporcionar detalles del método de pago, como el nombre, la descripción y los detalles técnicos
+    And el nuevo método de pago debe ser registrado y estar disponible para los usuarios
+
+  Escenario: Editar un método de pago existente
+    Given que soy un administrador de la aplicación
+    And he accedido a la configuración de métodos de pago
+    When edito un método de pago existente
+    Then debo poder realizar cambios en el nombre, la descripción o los detalles técnicos del método de pago
+    And los cambios deben reflejarse para los usuarios que utilicen ese método de pago
+
+  Escenario: Desactivar un método de pago
+    Given que soy un administrador de la aplicación
+    And he accedido a la configuración de métodos de pago
+    When desactivo un método de pago existente
+    Then el método de pago debe quedar inaccesible para los usuarios al realizar transacciones
+    And los usuarios deben ser notificados de la desactivación del método de pago
+
+  Escenario: Habilitar un método de pago desactivado
+    Given que soy un administrador de la aplicación
+    And he accedido a la configuración de métodos de pago
+    When habilito un método de pago previamente desactivado
+    Then el método de pago debe estar nuevamente disponible para los usuarios al realizar transacciones
+    And los usuarios deben ser notificados de la reactivación del método de pago
+
+  Escenario: Asegurar la confidencialidad de datos de pago
+    Given que soy un administrador de la aplicación
+    When gestiono métodos de pago y datos relacionados con transacciones
+    Then debo garantizar la seguridad y confidencialidad de los datos de pago de los usuarios
+    And debo cumplir con las regulaciones y estándares de seguridad de datos aplicables
