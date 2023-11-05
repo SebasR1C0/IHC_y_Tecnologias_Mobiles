@@ -1,0 +1,55 @@
+Funcionalidad: Ingresar y gestionar información detallada sobre la logística del evento
+
+  Escenario: Acceso a la herramienta de gestión de logística
+    Given que soy un organizador de eventos registrado en la aplicación
+    When accedo a la herramienta de gestión de logística
+    Then debo ver la opción para ingresar y gestionar información detallada sobre la logística del evento
+
+  Escenario: Ingresar detalles de la ubicación
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de gestión de logística
+    When ingreso detalles sobre la ubicación del evento, como nombre del lugar, dirección y mapa
+    Then debo poder proporcionar información detallada sobre la ubicación del evento
+    And la aplicación debe permitir la inclusión de un mapa o enlace de ubicación
+
+  Escenario: Especificar equipo necesario
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de gestión de logística
+    When especifico el equipo necesario para el evento, como audio, proyectores, sillas, mesas, etc.
+    Then debo poder enumerar y describir detalladamente el equipo necesario
+    And la aplicación debe permitir la asignación de cantidades y requisitos específicos
+
+  Escenario: Registrar requisitos especiales
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de gestión de logística
+    When registro requisitos especiales para el evento, como necesidades dietéticas, accesibilidad, acomodaciones especiales, etc.
+    Then debo poder describir detalladamente los requisitos especiales y necesidades del evento
+    And la aplicación debe permitir la asignación de requisitos a invitados o grupos de invitados
+
+  Escenario: Edición de información de logística
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he ingresado detalles de la logística del evento
+    When deseo editar la información de ubicación, equipo o requisitos especiales
+    Then debo tener la opción de editar la información existente
+    And la aplicación debe actualizar la información de logística según mis ediciones
+
+  Escenario: Visualización de detalles de logística
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he ingresado detalles de la logística del evento
+    When deseo ver los detalles de logística del evento
+    Then debo poder acceder a una vista detallada que muestre la información de ubicación, equipo y requisitos especiales de manera organizada
+    And la vista debe ser clara y fácil de leer
+
+  Escenario: Comunicación de logística con el personal
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he ingresado detalles de la logística del evento
+    When deseo comunicarme con el personal o proveedores relacionados con la logística del evento
+    Then debo tener la opción de enviar mensajes o notificaciones directamente desde la herramienta de gestión de logística
+    And la comunicación debe estar relacionada con los detalles de logística específicos
+
+  Escenario: Control de versiones de la logística
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he ingresado detalles de la logística del evento
+    When deseo ver el historial de cambios o versiones anteriores de la información de logística
+    Then debo tener la opción de acceder a un historial de versiones y recuperar estados anteriores de la información de logística
+    And debo poder ver y restaurar versiones anteriores si es necesario
