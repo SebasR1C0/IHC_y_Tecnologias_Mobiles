@@ -1,0 +1,205 @@
+.frame-3,
+.frame-3 * {
+  box-sizing: border-box;
+}
+.frame-3 {
+  background: #ffffff;
+  width: 675px;
+  height: 415px;
+  position: relative;
+  overflow: hidden;
+}
+.button-inicio {
+  width: 89px;
+  height: 40px;
+  position: absolute;
+  left: 33px;
+  top: 16px;
+}
+.button-inicio2 {
+  width: 69px;
+  height: 48px;
+  position: absolute;
+  left: -9px;
+  top: -13px;
+}
+.genetech {
+  color: #000000;
+  text-align: center;
+  font: 400 14px/16px "jsMath-cmr10", sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 69px;
+  height: 48px;
+}
+.analisis-1-3 {
+  width: 85px;
+  height: 66px;
+  position: absolute;
+  left: 295px;
+  top: 89px;
+}
+.analisis-1-4 {
+  width: 85px;
+  height: 66px;
+  position: absolute;
+  left: 295px;
+  top: 89px;
+}
+.rectangle-6 {
+  width: 82px;
+  height: 26px;
+  position: absolute;
+  left: 351px;
+  top: 342px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rectangle-62 {
+  border-radius: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.registrase {
+  color: #000000;
+  text-align: left;
+  font: 400 10px/16px "Kameron", sans-serif;
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  width: 51px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-4 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 221px;
+  height: 32px;
+  position: absolute;
+  left: 220px;
+  top: 236px;
+}
+.correo-o-user {
+  color: #000000;
+  text-align: left;
+  font: 400 10px/16px "Kameron", sans-serif;
+  position: absolute;
+  left: 227px;
+  top: 147px;
+  width: 124px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contrase-a {
+  color: #000000;
+  text-align: left;
+  font: 400 10px/16px "Kameron", sans-serif;
+  position: absolute;
+  left: 227px;
+  top: 219px;
+  width: 124px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-5 {
+  width: 82px;
+  height: 26px;
+  position: absolute;
+  left: 220px;
+  top: 342px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rectangle-52 {
+  border-radius: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.iniciar {
+  color: #fbfcfd;
+  text-align: left;
+  font: 400 10px/16px "Kameron", sans-serif;
+  position: absolute;
+  left: 24px;
+  top: 7px;
+  width: 34px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.log-in {
+  color: #000000;
+  text-align: left;
+  font: 400 24px/16px "Kameron", sans-serif;
+  position: absolute;
+  left: 296px;
+  top: 52px;
+  width: 84px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.image-4 {
+  width: 269px;
+  height: 39px;
+  position: absolute;
+  left: 191px;
+  top: 289px;
+}
+.image-42 {
+  width: 269px;
+  height: 39px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.image-20 {
+  width: 67px;
+  height: 51px;
+  position: absolute;
+  left: 0px;
+  top: 349px;
+}
+.image-19 {
+  width: 67px;
+  height: 51px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.image-51 {
+  width: 186px;
+  height: 157px;
+  position: absolute;
+  left: 24px;
+  top: 100px;
+}
+.image-52 {
+  width: 208px;
+  height: 146px;
+  position: absolute;
+  left: 460px;
+  top: 112px;
+}
+.rectangle-3 {
+  border-radius: 0px;
+  position: sticky;
+  left: 220px;
+  top: 169px;
+  overflow: visible;
+}
