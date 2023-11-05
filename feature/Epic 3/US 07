@@ -1,1 +1,32 @@
-aca
+Funcionalidad: Establecer colaboraciones con tiendas de muebles o decoración
+
+  Escenario: Establecer una colaboración exitosa con una tienda
+    Given que soy un administrador del servicio
+    And deseo establecer una colaboración con una tienda de muebles o decoración
+    When ingreso los datos de la tienda, incluyendo nombre, dirección y detalles de contacto
+    And confirmo la colaboración
+    Then el servicio debe registrar la colaboración con la tienda
+    And la tienda debe recibir una confirmación de la colaboración
+
+  Escenario: Validar la existencia de la colaboración
+    Given que soy un administrador del servicio
+    And he establecido previamente una colaboración con una tienda
+    When consulto la lista de colaboraciones establecidas
+    Then el servicio debe mostrar la tienda como una colaboración existente
+    And la tienda debe ser identificable en la lista de colaboraciones
+
+  Escenario: Actualizar detalles de la colaboración
+    Given que soy un administrador del servicio
+    And he establecido previamente una colaboración con una tienda
+    When actualizo los detalles de la colaboración, incluyendo dirección o detalles de contacto
+    And confirmo los cambios
+    Then el servicio debe registrar los detalles actualizados de la colaboración
+    And la tienda debe recibir una notificación sobre los cambios realizados
+
+  Escenario: Finalizar una colaboración
+    Given que soy un administrador del servicio
+    And he establecido previamente una colaboración con una tienda
+    When decido finalizar la colaboración
+    And confirmo la finalización
+    Then el servicio debe eliminar la colaboración con la tienda de la lista de colaboraciones
+    And la tienda debe recibir una notificación de finalización de la colaboración
