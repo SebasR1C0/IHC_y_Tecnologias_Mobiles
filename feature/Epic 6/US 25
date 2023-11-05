@@ -1,0 +1,45 @@
+Funcionalidad: Seguimiento de confirmaciones de asistencia
+
+  Escenario: Acceso a la herramienta de seguimiento de confirmaciones
+    Given que soy un organizador de eventos registrado en la aplicación
+    When accedo a la herramienta de seguimiento de confirmaciones de asistencia
+    Then debo ver la opción para visualizar el estado de confirmaciones de mis invitados
+
+  Escenario: Visualización de lista de invitados
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de seguimiento de confirmaciones de asistencia
+    When selecciono mi evento
+    Then debo poder ver la lista de invitados a mi evento
+    And la lista debe mostrar el nombre de los invitados y su estado de confirmación
+
+  Escenario: Estado de confirmación de invitados
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de seguimiento de confirmaciones de asistencia
+    And tengo la lista de invitados visible
+    When observo el estado de confirmación de un invitado
+    Then debo poder ver si un invitado ha confirmado su asistencia, si ha declinado o si aún no ha respondido
+    And la aplicación debe proporcionar un resumen claro del estado de confirmación
+
+  Escenario: Marcar confirmaciones manualmente
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de seguimiento de confirmaciones de asistencia
+    And tengo la lista de invitados visible
+    When deseo marcar manualmente la confirmación de asistencia de un invitado
+    Then debo tener la opción de cambiar el estado de confirmación de ese invitado
+    And la aplicación debe registrar los cambios realizados por el organizador
+
+  Escenario: Filtrar y buscar invitados
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de seguimiento de confirmaciones de asistencia
+    And tengo la lista de invitados visible
+    When deseo buscar o filtrar invitados por nombre o estado de confirmación
+    Then debo poder utilizar funciones de búsqueda y filtros para encontrar invitados específicos o grupos de invitados
+    And la aplicación debe actualizar la lista en función de mis selecciones
+
+  Escenario: Exportar datos de confirmación
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la herramienta de seguimiento de confirmaciones de asistencia
+    And tengo la lista de invitados visible
+    When deseo exportar los datos de confirmación de asistencia
+    Then debo tener la opción de exportar la lista de invitados y sus estados de confirmación en un formato utilizable
+    And la aplicación debe generar un archivo descargable con los datos
