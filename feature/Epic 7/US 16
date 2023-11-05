@@ -1,0 +1,42 @@
+Funcionalidad: Utilizar la aplicación en diversos lugares con conectividad a Internet
+
+  Escenario: Acceder a la aplicación desde cualquier lugar con Internet
+    Given que soy un usuario registrado
+    When tengo acceso a un dispositivo con conectividad a Internet
+    Then debo poder acceder a la aplicación desde cualquier lugar con conectividad a Internet
+    And la aplicación debe cargar correctamente en el dispositivo
+
+  Escenario: Iniciar sesión desde un dispositivo diferente
+    Given que soy un usuario registrado
+    And he iniciado sesión en la aplicación en un dispositivo
+    When deseo iniciar sesión desde otro dispositivo
+    Then debo poder iniciar sesión con las mismas credenciales desde cualquier lugar con conectividad a Internet
+    And la aplicación debe mantener la integridad de mis datos y preferencias
+
+  Escenario: Realizar acciones en la aplicación
+    Given que soy un usuario registrado
+    And he iniciado sesión en la aplicación desde un lugar con conectividad a Internet
+    When realizo acciones dentro de la aplicación, como crear, editar o eliminar contenido
+    Then la aplicación debe permitirme realizar estas acciones sin restricciones geográficas
+    And los cambios realizados deben reflejarse en mi cuenta, independientemente de mi ubicación
+
+  Escenario: Sincronización de datos
+    Given que soy un usuario registrado
+    And he realizado cambios en la aplicación desde un lugar con conectividad a Internet
+    When accedo a la aplicación desde otro lugar con Internet
+    Then la aplicación debe sincronizar automáticamente los datos y cambios realizados en mis dispositivos
+    And debo poder ver los mismos datos y estado de la aplicación en todos mis dispositivos
+
+  Escenario: Respuesta a conexiones intermitentes
+    Given que soy un usuario registrado
+    And utilizo la aplicación en un lugar con conectividad a Internet intermitente
+    When la conexión se vuelve inestable
+    Then la aplicación debe ser capaz de manejar conexiones intermitentes de manera adecuada
+    And debe proporcionar retroalimentación al usuario sobre el estado de la conexión
+
+  Escenario: Notificar al usuario sobre problemas de conectividad
+    Given que soy un usuario registrado
+    And estoy utilizando la aplicación en un lugar con conectividad a Internet
+    When la aplicación detecta problemas de conectividad
+    Then la aplicación debe notificar al usuario sobre los problemas de conectividad y proporcionar sugerencias para resolverlos
+    And la aplicación debe intentar reconectar automáticamente cuando la conexión se restablezca
