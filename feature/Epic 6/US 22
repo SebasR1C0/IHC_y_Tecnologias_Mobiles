@@ -1,0 +1,41 @@
+Funcionalidad: Recordatorios automáticos de fechas importantes
+
+  Escenario: Acceso a la configuración de recordatorios
+    Given que soy un cliente registrado en la aplicación
+    When accedo a la configuración de recordatorios
+    Then debo ver la opción para gestionar los recordatorios de fechas importantes
+
+  Escenario: Agregar un nuevo recordatorio
+    Given que soy un cliente registrado en la aplicación
+    And he accedido a la configuración de recordatorios
+    When agrego un nuevo recordatorio para una fecha importante relacionada con mi evento
+    Then debo poder seleccionar la fecha y hora del recordatorio
+    And debo poder asignar una etiqueta o descripción para identificar el recordatorio
+
+  Escenario: Visualizar los recordatorios
+    Given que soy un cliente registrado en la aplicación
+    And he agregado recordatorios para fechas importantes
+    When accedo a la sección de recordatorios
+    Then debo poder ver una lista de todos los recordatorios configurados
+    And la lista debe mostrar la fecha, hora y descripción de cada recordatorio
+
+  Escenario: Recordatorio en tiempo real
+    Given que soy un cliente registrado en la aplicación
+    And he configurado un recordatorio para una fecha importante
+    When llega la fecha y hora del recordatorio
+    Then la aplicación debe enviar una notificación o alerta en tiempo real para recordarme la fecha importante
+    And la notificación debe ser clara y fácil de entender
+
+  Escenario: Edición y eliminación de recordatorios
+    Given que soy un cliente registrado en la aplicación
+    And he configurado recordatorios para fechas importantes
+    When deseo editar un recordatorio existente o eliminarlo
+    Then debo tener la opción de editar la fecha, hora o descripción del recordatorio
+    And debo poder eliminar un recordatorio si ya no es relevante
+
+  Escenario: Configuración de recordatorios recurrentes
+    Given que soy un cliente registrado en la aplicación
+    And he accedido a la configuración de recordatorios
+    When deseo configurar un recordatorio que se repita en fechas importantes de forma recurrente
+    Then debo tener la opción de configurar un recordatorio recurrente, como un recordatorio diario, semanal o mensual
+    And la aplicación debe enviar recordatorios recurrentes según la configuración
