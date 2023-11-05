@@ -1,0 +1,47 @@
+Funcionalidad: Enviar invitaciones por correo electrónico
+
+  Escenario: Acceso a la función de enviar invitaciones
+    Given que soy un organizador de eventos registrado en la aplicación
+    When accedo a la función de enviar invitaciones por correo electrónico
+    Then debo ver la opción para crear y enviar invitaciones
+
+  Escenario: Crear una nueva invitación
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he accedido a la función de enviar invitaciones
+    When creo una nueva invitación
+    Then debo poder proporcionar detalles del evento, como título, fecha, hora, ubicación y descripción
+    And debo poder personalizar el contenido de la invitación
+
+  Escenario: Agregar lista de invitados
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he creado una nueva invitación
+    When agrego la lista de invitados
+    Then debo poder importar una lista de correos electrónicos desde un archivo o agregar invitados individualmente
+    And debo poder asignar categorías o grupos a los invitados si es necesario
+
+  Escenario: Personalizar la invitación
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he creado una nueva invitación
+    When personalizo la invitación, como seleccionar un diseño, agregar imágenes o personalizar el mensaje
+    Then debo poder editar y personalizar el diseño y contenido de la invitación
+    And debo poder previsualizar la invitación antes de enviarla
+
+  Escenario: Enviar invitaciones por correo electrónico
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he creado una nueva invitación
+    When estoy listo para enviar las invitaciones
+    Then debo tener la opción de enviar las invitaciones por correo electrónico a los invitados de la lista
+    And la aplicación debe enviar las invitaciones a las direcciones de correo electrónico proporcionadas
+
+  Escenario: Confirmación de asistencia
+    Given que soy un invitado que ha recibido una invitación por correo electrónico
+    When recibo la invitación por correo electrónico
+    Then debo poder confirmar mi asistencia o declinar la invitación directamente desde el correo electrónico
+    And la aplicación debe registrar las respuestas de los invitados
+
+  Escenario: Seguimiento de respuestas
+    Given que soy un organizador de eventos registrado en la aplicación
+    And he enviado invitaciones por correo electrónico
+    When los invitados responden a las invitaciones
+    Then debo poder ver las respuestas y el estado de asistencia de los invitados en tiempo real
+    And la aplicación debe generar informes de respuestas para el organizador
