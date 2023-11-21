@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./image-51.png'), url('./image-53.png');
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    background-size: 20%, 20%;
+}
+
+header {
+    text-align: center;
+    background-color: #ffaeae;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+#registro {
+    background-color: #FFBC2C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #FFBC2C;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0ffc3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFBC2C;
+    color: white;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.btn-registro {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición en el color de fondo */
+}
+
+.btn-registro:hover {
+    background-color: #45a049; /* Cambiar el color de fondo al pasar el mouse sobre el botón */
+}
+
